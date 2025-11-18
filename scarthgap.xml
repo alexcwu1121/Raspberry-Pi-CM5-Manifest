@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<manifest>
+    <!-- Remote repositories definition -->
+    <remote name="yocto" fetch="git://git.yoctoproject.org"/>
+    <remote name="github" fetch="https://github.com/"/>
+    <remote name="oe" fetch="https://github.com/openembedded"/>
+
+    <!-- Upstream Yocto & OpenEmbedded Projects -->
+    <project name="poky" revision="scarthgap" remote="yocto" path="sources/poky"/>
+    <project remote="oe" revision="scarthgap" name="meta-openembedded" path="sources/meta-openembedded"/>
+    <project name="agherzan/meta-raspberrypi" revision="scarthgap" remote="github" path="sources/meta-raspberrypi"/>
+
+    <!-- Application Layers -->
+</manifest>
